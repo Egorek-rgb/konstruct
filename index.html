@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="bg">
+        <div class="container">
+          <div class="header__top">
+            <h1 class="logo">SneakMax</h1>
+            <nav class="navigation">
+              <ul class="menu">
+                <li class="menu__item">Каталог</li>
+                <li class="menu__item">О нас</li>
+                <li class="menu__item">Подбор товара</li>
+                <li class="menu__item">Наша команда</li>
+                <li class="menu__item">Доставка и оплата</li>
+                <li class="menu__item">Контакты</li>
+                <li class="menu__item basket">
+                  <div class="basket-text">Корзина</div>
+                  <div class="bascet-icon">
+                    <img src="/images/Vector.svg" alt="bascet" />
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__content">
+            <div class="bg-text">SneakMax</div>
+            <div class="header__main-text">
+              Кроссовки известных брендов с доставкой по России и СНГ
+            </div>
+            <div class="header__sub-text">
+              Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse
+              и многие другие по низким ценам
+            </div>
+            <button class="button">Перейти к покупкам</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <h2 class="catalog">Каталог</h2>
+        <div class="content">
+          <div class="parametrs">
+            <h3 class="parametrs__head">Подбор <br />по параметрам</h3>
+            <div class="parametrs__cost">
+              <div class="parametrs__cost-head" style="width: 120px">
+                Цена, руб
+              </div>
+              <form action="#" method="get">
+                <div class="border">
+                  <input
+                    class="parametrs__cost-number"
+                    id="min-value"
+                    min="0"
+                    max="100000"
+                    step="1"
+                    type="number"
+                    oninput="this.value = Math.min(100000, Math.max(0, this.value))"
+                    name="min-value"
+                  />
+                  <div class="line"></div>
+                  <input
+                    class="parametrs__cost-number"
+                    id="max-value"
+                    min="0"
+                    max="100000"
+                    step="1"
+                    type="number"
+                    oninput="this.value = Math.min(100000, Math.max(0, this.value))"
+                  />
+                </div>
+                <div class="range-slider">
+                  <div class="slider-container">
+                    <div class="slider-track"></div>
+                    <input
+                      type="range"
+                      id="min-range"
+                      min="0"
+                      max="100000"
+                      step="1"
+                      value="0"
+                    />
+                    <input
+                      type="range"
+                      min="0"
+                      max="100000"
+                      value="100000"
+                      step="1"
+                      id="max-range"
+                    />
+                  </div>
+                </div>
+                <div class="parametrs__gender">
+                  <div class="parametrs__gender-head">Пол</div>
+                  <div class="checkboxes">
+                    <label class="custom-checkbox male-custom">
+                      <input type="checkbox" class="base-checkbox" />
+                      <span class="new-checkbox"></span>
+                      <span class="custom-checkbox__text male-text">
+                        мужской
+                      </span>
+                    </label>
+                    <label class="custom-checkbox female-custom">
+                      <input type="checkbox" class="base-checkbox" />
+                      <span class="new-checkbox"></span>
+                      <span class="custom-checkbox__text female-text">
+                        женский
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="parametrs__size">
+                  <div class="parametrs__size-text">Размер</div>
+                  <div class="parametrs__size-table">
+                    <div class="parametrs__size-row">
+                      <label class="custom-radio">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          class="base-radio"
+                        />
+                        <span class="radio-text"> 35 </span>
+                      </label>
+                      <label class="custom-radio">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          class="base-radio"
+                        />
+                        <span class="radio-text"> 35 </span>
+                      </label>
+                      <label class="custom-radio">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          class="base-radio"
+                        />
+                        <span class="radio-text"> 35 </span>
+                      </label>
+                    </div>
+                    <div class="parametrs__size-row">
+                      <label class="custom-radio">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          class="base-radio"
+                        />
+                        <span class="radio-text"> 35 </span>
+                      </label>
+                      <label class="custom-radio">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          class="base-radio"
+                        />
+                        <span class="radio-text"> 35 </span>
+                      </label>
+                      <label class="custom-radio">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          class="base-radio"
+                        />
+                        <span class="radio-text"> 35 </span>
+                      </label>
+                    </div>
+                    <div class="parametrs__size-row">
+                      <label class="custom-radio">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          class="base-radio"
+                        />
+                        <span class="radio-text"> 35 </span>
+                      </label>
+                      <label class="custom-radio">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          class="base-radio"
+                        />
+                        <span class="radio-text"> 35 </span>
+                      </label>
+                      <label class="custom-radio">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          class="base-radio"
+                        />
+                        <span class="radio-text"> 35 </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="parametrs__button" type="submit">
+                  Применить
+                </button>
+                <button class="parametrs__reset" type="reset">сбросить</button>
+              </form>
+            </div>
+          </div>
+          <div class="catalog-list">
+            <div class="catalog-list__row">
+              <div class="catalog-list__item">
+                <img src="/images/shooses.jpg" alt="" />
+                <p class="item-description">
+                  Кроссовки Nike Air Force 1 '07 QS
+                </p>
+                <p class="item-cost">11 000 р</p>
+              </div>
+              <div class="catalog-list__item">
+                <img src="/images/shooses.jpg" alt="" />
+                <p class="item-description">
+                  Кроссовки Nike Air Force 1 '07 QS
+                </p>
+                <p class="item-cost">11 000 р</p>
+              </div>
+              <div class="catalog-list__item">
+                <img src="/images/shooses.jpg" alt="" />
+                <p class="item-description">
+                  Кроссовки Nike Air Force 1 '07 QS
+                </p>
+                <p class="item-cost">11 000 р</p>
+              </div>
+            </div>
+            <div class="catalog-list__row">
+              <div class="catalog-list__item">
+                <img src="/images/shooses.jpg" alt="" />
+                <p class="item-description">
+                  Кроссовки Nike Air Force 1 '07 QS
+                </p>
+                <p class="item-cost">11 000 р</p>
+              </div>
+              <div class="catalog-list__item">
+                <img src="/images/shooses.jpg" alt="" />
+                <p class="item-description">
+                  Кроссовки Nike Air Force 1 '07 QS
+                </p>
+                <p class="item-cost">11 000 р</p>
+              </div>
+              <div class="catalog-list__item">
+                <img src="/images/shooses.jpg" alt="" />
+                <p class="item-description">
+                  Кроссовки Nike Air Force 1 '07 QS
+                </p>
+                <p class="item-cost">11 000 р</p>
+              </div>
+            </div>
+            <div class="catalog-list__row">
+              <div class="catalog-list__item">
+                <img src="/images/shooses.jpg" alt="" />
+                <p class="item-description">
+                  Кроссовки Nike Air Force 1 '07 QS
+                </p>
+                <p class="item-cost">11 000 р</p>
+              </div>
+              <div class="catalog-list__item">
+                <img src="/images/shooses.jpg" alt="" />
+                <p class="item-description">
+                  Кроссовки Nike Air Force 1 '07 QS
+                </p>
+                <p class="item-cost">11 000 р</p>
+              </div>
+              <div class="catalog-list__item">
+                <img src="/images/shooses.jpg" alt="" />
+                <p class="item-description">
+                  Кроссовки Nike Air Force 1 '07 QS
+                </p>
+                <p class="item-cost">11 000 р</p>
+              </div>
+            </div>
+            <button class="catalog-list__button">Показать еще</button>
+          </div>
+        </div>
+      </div>
+      <div class="about-us">
+        <div class="bg">
+          <img src="/images/figure.svg" alt="" class="figure" />
+          <div class="container">
+            <div class="group">
+              <div class="about-us__head">Пара слов о нас</div>
+              <div class="about-us__description">
+                Спорт держит нас в форме. Учит дисциплине. Объединяет нас. Через
+                спорт мы можем менять жизни. В том числе с помощью
+                воодушевляющих историй спортсменов. Чтобы помочь тебе подняться
+                и двигаться вперед.
+              </div>
+              <div class="ps-line">
+                <span class="about-us__line"></span>
+                <div class="about-us__ps">SneakMax</div>
+              </div>
+            </div>
+            <img
+              src="/images/pexels-budgeron-bach-5158825 2.jpg"
+              alt=""
+              class="nigga"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="question-about-shoses-inner">
+        <div class="container">
+          <div class="question-about-shoses">
+            <div class="question-about-shoses__head">
+              Мы подберем идеальную пару для вас
+            </div>
+            <p>
+              Ответьте на три вопроса и мы вышлем каталог с самыми подходящими
+              для вас моделями
+            </p>
+            <div class="question-about-shoses__line"></div>
+            <div class="galary-question">
+              Какой тип кроссовок рассматриваете?
+            </div>
+            <div class="galary-of-question-shoses">
+              <div class="galary-of-question-shoses__row">
+                <div class="galary-of-question-shoses__item">
+                  <img
+                    src="/images/фото кроссовка.jpg"
+                    alt=""
+                    class="shoses-img"
+                  />
+                  <label class="custom-checkbox male-custom shooses-checkbox">
+                    <input type="checkbox" class="base-checkbox" />
+                    <span class="new-checkbox"></span>
+                    <span class="custom-checkbox__text male-text"> кеды </span>
+                  </label>
+                </div>
+                <div class="galary-of-question-shoses__item">
+                  <img
+                    src="/images/фото кроссовка.jpg"
+                    alt=""
+                    class="shoses-img"
+                  />
+                  <label class="custom-checkbox male-custom shooses-checkbox">
+                    <input type="checkbox" class="base-checkbox" />
+                    <span class="new-checkbox"></span>
+                    <span class="custom-checkbox__text male-text"> кеды </span>
+                  </label>
+                </div>
+                <div class="galary-of-question-shoses__item">
+                  <img
+                    src="/images/фото кроссовка.jpg"
+                    alt=""
+                    class="shoses-img"
+                  />
+                  <label class="custom-checkbox male-custom shooses-checkbox">
+                    <input type="checkbox" class="base-checkbox" />
+                    <span class="new-checkbox"></span>
+                    <span class="custom-checkbox__text male-text"> кеды </span>
+                  </label>
+                </div>
+              </div>
+              <div class="galary-of-question-shoses__row">
+                <div class="galary-of-question-shoses__item">
+                  <img
+                    src="/images/фото кроссовка.jpg"
+                    alt=""
+                    class="shoses-img"
+                  />
+                  <label class="custom-checkbox male-custom shooses-checkbox">
+                    <input type="checkbox" class="base-checkbox" />
+                    <span class="new-checkbox"></span>
+                    <span class="custom-checkbox__text male-text"> кеды </span>
+                  </label>
+                </div>
+                <div class="galary-of-question-shoses__item">
+                  <img
+                    src="/images/фото кроссовка.jpg"
+                    alt=""
+                    class="shoses-img"
+                  />
+                  <label class="custom-checkbox male-custom shooses-checkbox">
+                    <input type="checkbox" class="base-checkbox" />
+                    <span class="new-checkbox"></span>
+                    <span class="custom-checkbox__text male-text"> кеды </span>
+                  </label>
+                </div>
+                <div class="galary-of-question-shoses__item">
+                  <img
+                    src="/images/фото кроссовка.jpg"
+                    alt=""
+                    class="shoses-img"
+                  />
+                  <label class="custom-checkbox male-custom shooses-checkbox">
+                    <input type="checkbox" class="base-checkbox" />
+                    <span class="new-checkbox"></span>
+                    <span class="custom-checkbox__text male-text"> кеды </span>
+                  </label>
+                </div>
+              </div>
+              <div class="question-about-shoses__line"></div>
+              <div class="step">
+                <div class="one-of-steps">1 из 3</div>
+                <button class="next-step">Следующий шаг</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our-team-inner">
+        <div class="bg">
+          <img src="/images/фигура.png" alt="" class="figure-1" />
+          <img src="/images/фигура2.png" alt="" class="figure-2" />
+          <div class="container">
+            <div class="our-team">
+              <div class="our-team__head">Наша команда</div>
+              <div class="our-team__galary">
+                <div class="our-team__galary-row">
+                  <div class="our-team__galary-item">
+                    <img
+                      src="/images/jack-irwin-djIR42oN7Js-unsplash 1.png"
+                      alt=""
+                      class="our-team__galary-img"
+                    />
+                    <div class="name">Максим Золотарев</div>
+                    <div class="role">Администратор</div>
+                  </div>
+                  <div class="our-team__galary-item">
+                    <img
+                      src="/images/jack-irwin-djIR42oN7Js-unsplash 1.png"
+                      alt=""
+                      class="our-team__galary-img"
+                    />
+                    <div class="name">Максим Золотарев</div>
+                    <div class="role">Администратор</div>
+                  </div>
+                  <div class="our-team__galary-item">
+                    <img
+                      src="/images/jack-irwin-djIR42oN7Js-unsplash 1.png"
+                      alt=""
+                      class="our-team__galary-img"
+                    />
+                    <div class="name">Максим Золотарев</div>
+                    <div class="role">Администратор</div>
+                  </div>
+                </div>
+                <div class="our-team__galary-row">
+                  <div class="our-team__galary-item">
+                    <img
+                      src="/images/jack-irwin-djIR42oN7Js-unsplash 1.png"
+                      alt=""
+                      class="our-team__galary-img"
+                    />
+                    <div class="name">Максим Золотарев</div>
+                    <div class="role">Администратор</div>
+                  </div>
+                  <div class="our-team__galary-item">
+                    <img
+                      src="/images/jack-irwin-djIR42oN7Js-unsplash 1.png"
+                      alt=""
+                      class="our-team__galary-img"
+                    />
+                    <div class="name">Максим Золотарев</div>
+                    <div class="role">Администратор</div>
+                  </div>
+                  <div class="our-team__galary-item">
+                    <img
+                      src="/images/jack-irwin-djIR42oN7Js-unsplash 1.png"
+                      alt=""
+                      class="our-team__galary-img"
+                    />
+                    <div class="name">Максим Золотарев</div>
+                    <div class="role">Администратор</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="often-questions-inner">
+        <div class="container">
+          <div class="often-questions">
+            <div class="often-questions__head">Часто задаваемые вопросы</div>
+            <div class="often-questions__list">
+              <div class="question-about-shoses__line"></div>
+              <div class="often-questions__item">
+                <button class="often-questions__button">
+                  <div class="often-questions__button-head">Вопрос 1</div>
+                  <div class="plus">
+                    <img src="/images/+.png" alt="" />
+                  </div>
+                </button>
+                <div class="often-questions__answer">
+                  А это ответ 1: в комплексе функционируют 6 детских садов с
+                  площадками, воспитателями и всякими другими людьми
+                </div>
+              </div>
+              <div class="question-about-shoses__line"></div>
+              <div class="often-questions__item">
+                <button class="often-questions__button">
+                  <div class="often-questions__button-head">Вопрос 1</div>
+                  <div class="plus">
+                    <img src="/images/+.png" alt="" />
+                  </div>
+                </button>
+                <div class="often-questions__answer">
+                  А это ответ 1: в комплексе функционируют 6 детских садов с
+                  площадками, воспитателями и всякими другими людьми
+                </div>
+              </div>
+              <div class="question-about-shoses__line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-us-inner">
+        <div class="gray-bg">
+          <div class="contact-us">
+            <div class="container">
+              <div>
+                <h2 class="contact-us-head">Контакты</h2>
+                <div class="head-office-inner">
+                  <span class="head-office-head">Главный офис</span>
+                  <span class="question"
+                    ><img src="/images/_.svg" alt=""
+                  /></span>
+                  <div class="question-help">
+                    Адрес и телефон для корреспонденции, инвесторов. Вопросы о
+                    доставке, качестве обслуживания и товара просьба задавать в
+                    отдел продаж
+                    <svg class="triangle-clip" width="40" height="40">
+                      <path
+                        d="M20 35 L5 5 L35 5 Z"
+                        fill="#FFFFFF"
+                        stroke="#FFFFFF"
+                        stroke-width="5"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="head-office-number">+7 800 789 89 89</div>
+                  <div class="head-office-address">
+                    г. Санкт-Петербург, Комсомольская, 43 к1
+                  </div>
+                </div>
+                <div class="head-office-inner">
+                  <div class="head-office-head">Отдел продаж</div>
+                  <div class="head-office-number">+7 800 789 89 89</div>
+                  <div class="head-office-address">
+                    г. Санкт-Петербург, Комсомольская, 43 к1
+                  </div>
+                </div>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.123456789!2d30.1234567!3d50.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDA3JzI0LjQiTiAzMMKwMDcnMjQuNCJF!5e0!3m2!1sen!2sua!4v1234567890"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feedback-and-instagram">
+        <div class="container">
+          <div class="feedback">
+            <div class="feedback-head">Есть вопросы?</div>
+            <div class="feedback-text">
+              Заполните форму и наш менеджер свяжется с вами
+            </div>
+            <form action="" class="feedback-form">
+              <input type="text" class="feedback-form__name" />
+              <input type="number" class="feedback-form__number" />
+              <buton class="feedback-form__button"> Отправить </buton>
+            </form>
+          </div>
+          <div class="instagram">
+            <div class="instagram-head">
+              <img src="/images/1024px-Instagram_logo 1.png" alt="" />
+            </div>
+            <div class="instagram__galary">
+              <div class="instagram__row">
+                <img
+                  src="/images/Rectangle 37.jpg"
+                  alt=""
+                  class="instagram__photo"
+                />
+                <img
+                  src="/images/Rectangle 37.jpg"
+                  alt=""
+                  class="instagram__photo"
+                />
+              </div>
+              <div class="instagram__row">
+                <img
+                  src="/images/Rectangle 38.jpg"
+                  alt=""
+                  class="middle-photo"
+                />
+              </div>
+              <div class="instagram__row">
+                <img
+                  src="/images/Rectangle 37.jpg"
+                  alt=""
+                  class="instagram__photo"
+                />
+                <img
+                  src="/images/Rectangle 37.jpg"
+                  alt=""
+                  class="instagram__photo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img src="/images/logo1.png" alt="" class="logo" />
+        <div class="footer-list">
+          <div class="footer-list__item">Каталог</div>
+          <div class="footer-list__item">О нас</div>
+          <div class="footer-list__item">Подбор товара</div>
+          <div class="footer-list__item">Наша команда</div>
+          <div class="footer-list__item">Доставка и оплата</div>
+          <div class="footer-list__item">Контакты</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/script.js"></script>
+</html>
